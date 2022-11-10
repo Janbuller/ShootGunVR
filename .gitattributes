@@ -1,0 +1,2 @@
+. !text !filter !merge !diff
+Assets/Models/Guns/Hunting[[:space:]]Rifle-done.blend !text !filter !merge !diff
