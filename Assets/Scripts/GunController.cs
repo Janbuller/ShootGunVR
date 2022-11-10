@@ -23,7 +23,21 @@ public class GunController : MonoBehaviour
 
 	public void Fire(InputAction.CallbackContext context)
 	{
+		Vector3 EndPos = MuzzleTrans.TransformDirection(Vector3.forward);
 
-		Debug.Log("Fire!");
+		RaycastHit hit;
+		// Does the ray intersect any objects excluding the player layer
+		if (Physics.Raycast(MuzzleTrans.position, MuzzleTrans.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+		{
+            var Obj = hit.transform.gameObject;
+            if(Obj.tag == "Shootable")
+            {
+                Obj.GetComponent<IShootable>().GetKilled();
+            }
+		}
+		else
+		{
+			EndPos *= 1000;
+		}
 	}
 }
