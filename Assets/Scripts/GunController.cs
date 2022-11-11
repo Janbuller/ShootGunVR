@@ -10,34 +10,27 @@ public class GunController : MonoBehaviour
 	private Transform MuzzleTrans;
 
 	// Start is called before the first frame update
-    	void Start()
-    	{
+    void Start()
+    {
 		MuzzleTrans = Muzzle.GetComponent<Transform>();
-    	}
-
-    	// Update is called once per frame
-    	void Update()
-    	{
-    	    
-    	}
+    }
 
 	public void Fire(InputAction.CallbackContext context)
 	{
-		Vector3 EndPos = MuzzleTrans.TransformDirection(Vector3.forward);
-
-		RaycastHit hit;
-		// Does the ray intersect any objects excluding the player layer
-		if (Physics.Raycast(MuzzleTrans.position, MuzzleTrans.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
-		{
-            var Obj = hit.transform.gameObject;
-            if(Obj.tag == "Shootable")
+        if (context.performed)
+        {
+            RaycastHit hit;
+            // Does the ray intersect any objects excluding the player layer
+            if (Physics.Raycast(MuzzleTrans.position, MuzzleTrans.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
             {
-                Obj.GetComponent<IShootable>().GetKilled();
+                var Obj = hit.transform.gameObject;
+                IShootable ShootableComponent;
+                if (Obj.TryGetComponent<IShootable>(out ShootableComponent))
+                {
+                    ShootableComponent.GetShot();
+                }
+
             }
-		}
-		else
-		{
-			EndPos *= 1000;
-		}
+        }
 	}
 }

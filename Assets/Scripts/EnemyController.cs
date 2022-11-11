@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour, IShootable
         
     }
 
-    public void GetKilled()
+    public void GetShot()
     {
         Destroy(gameObject);
     }
