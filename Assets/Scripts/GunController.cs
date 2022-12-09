@@ -8,6 +8,7 @@ public class GunController : MonoBehaviour
 
 	public GameObject Muzzle;
 	private Transform MuzzleTrans;
+    public ParticleSystem MuzzleFlash;
 
 	// Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class GunController : MonoBehaviour
 	{
         if (context.performed)
         {
+            MuzzleFlash.Play();
             RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer
             if (Physics.Raycast(MuzzleTrans.position, MuzzleTrans.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
