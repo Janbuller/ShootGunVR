@@ -16,10 +16,8 @@ public class GunController : MonoBehaviour
 		MuzzleTrans = Muzzle.GetComponent<Transform>();
     }
 
-	public void Fire(InputAction.CallbackContext context)
+	public void Fire(UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs context)
 	{
-        if (context.performed)
-        {
             MuzzleFlash.Play();
             RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer
@@ -31,8 +29,6 @@ public class GunController : MonoBehaviour
                 {
                     ShootableComponent.GetShot();
                 }
-
-            }
         }
 	}
 }
