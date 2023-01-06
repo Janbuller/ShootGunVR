@@ -6,6 +6,7 @@ public class GoodEnemyController : MonoBehaviour, IShootable
 {
     [SerializeField]
     private GameObject BadVersion;
+
     // Start is called before the first frame update
     void Start()
     {
