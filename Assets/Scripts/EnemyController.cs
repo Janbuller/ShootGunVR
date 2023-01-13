@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour, IShootable
 {
 
     [SerializeField]
-    private PlayerController PlayerCtrl;
+    public PlayerController PlayerCtrl;
 
     [Header("The chance for a weapon to drop")]
     [SerializeField]
@@ -27,14 +27,15 @@ public class EnemyController : MonoBehaviour, IShootable
 
         if(Die) {
             Die = false;
-            GetShot();
+            GetShot(2);
         }
 
-        var Direction = PlayerCtrl.transform.position - transform.position;
+        var PlayerPos = PlayerCtrl.gameObject.GetComponent<CharacterController>().center;
+        var Direction = PlayerPos - transform.position;
         Direction = Direction.normalized;
 
         transform.position += new Vector3(Direction.x, 0, Direction.z) * Speed * Time.deltaTime;
-        transform.LookAt(new Vector3(PlayerCtrl.transform.position.x, transform.position.y, PlayerCtrl.transform.position.z));
+        transform.LookAt(new Vector3(PlayerPos.x, transform.position.y, PlayerPos.z));
     }
 
     public void GetShot(int Damage)

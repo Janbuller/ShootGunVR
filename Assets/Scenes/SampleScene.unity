@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -220,18 +220,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -242,18 +242,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -312,11 +312,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &60639439
 MeshFilter:
@@ -523,18 +523,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -545,18 +545,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -615,11 +615,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &66104835
 MeshFilter:
@@ -1011,18 +1011,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -1033,18 +1033,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -1103,11 +1103,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &119750679
 MeshFilter:
@@ -1314,18 +1314,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -1336,18 +1336,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -1406,11 +1406,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &140901890
 MeshFilter:
@@ -6481,83 +6481,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153143492}
   m_CullTransparentMesh: 1
---- !u!1001 &170808801
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -26.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &277169858
 GameObject:
   m_ObjectHideFlags: 0
@@ -7190,18 +7113,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -7212,18 +7135,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -7282,11 +7205,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &329856710
 MeshFilter:
@@ -7587,7 +7510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7732,18 +7655,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -7754,18 +7677,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 10.9
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -7824,11 +7747,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &419096705
 MeshFilter:
@@ -8597,18 +8520,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -8619,18 +8542,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 14.45
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -8689,11 +8612,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &603379258
 MeshFilter:
@@ -8900,18 +8823,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -8922,18 +8845,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -8992,11 +8915,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &606871132
 MeshFilter:
@@ -9416,7 +9339,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &883695530
 GameObject:
@@ -14587,18 +14510,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -14609,18 +14532,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -14679,11 +14602,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &965552178
 MeshFilter:
@@ -14793,83 +14716,6 @@ Transform:
   m_Father: {fileID: 1104861541}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1031001084
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (11)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &1051795575
 GameObject:
   m_ObjectHideFlags: 0
@@ -14967,18 +14813,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -14989,18 +14835,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -15059,11 +14905,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1051795578
 MeshFilter:
@@ -15225,85 +15071,8 @@ Transform:
   - {fileID: 2038329614}
   - {fileID: 603379261}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1128036115
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (9)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &1138603164
 GameObject:
   m_ObjectHideFlags: 0
@@ -15401,18 +15170,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -15423,18 +15192,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -15493,11 +15262,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1138603167
 MeshFilter:
@@ -15704,18 +15473,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -15726,18 +15495,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 7.47
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -15796,11 +15565,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1141380067
 MeshFilter:
@@ -15910,83 +15679,6 @@ Transform:
   m_Father: {fileID: 1104861541}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1147797566
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -26.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (6)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &1156220895
 GameObject:
   m_ObjectHideFlags: 0
@@ -16084,18 +15776,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -16106,18 +15798,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 9.9
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -16176,11 +15868,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1156220898
 MeshFilter:
@@ -16387,18 +16079,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -16409,18 +16101,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -16479,11 +16171,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1169423634
 MeshFilter:
@@ -16792,18 +16484,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -16814,18 +16506,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -16884,11 +16576,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1213593723
 MeshFilter:
@@ -17084,7 +16776,7 @@ Transform:
   - {fileID: 592488557}
   - {fileID: 458036459}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1220495716
 MonoBehaviour:
@@ -17271,7 +16963,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1257097554
 GameObject:
@@ -17370,18 +17062,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -17392,18 +17084,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -17462,11 +17154,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1257097557
 MeshFilter:
@@ -17637,7 +17329,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1427648731
 GameObject:
@@ -17736,18 +17428,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -17758,18 +17450,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 10.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -17828,11 +17520,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1427648734
 MeshFilter:
@@ -17974,83 +17666,6 @@ Transform:
   m_Father: {fileID: 359264215}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1001 &1518687660
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1001 &1519359077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18230,18 +17845,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -18252,18 +17867,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 9.9
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -18322,11 +17937,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1544947084
 MeshFilter:
@@ -18624,18 +18239,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -18646,18 +18261,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -18716,11 +18331,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1591967510
 MeshFilter:
@@ -18872,7 +18487,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675530823
 GameObject:
@@ -18971,18 +18586,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -18993,18 +18608,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -19063,11 +18678,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1675530826
 MeshFilter:
@@ -19177,83 +18792,6 @@ Transform:
   m_Father: {fileID: 1104861541}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1682858831
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &1788085323
 GameObject:
   m_ObjectHideFlags: 0
@@ -19351,18 +18889,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -19373,18 +18911,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -19443,11 +18981,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1788085326
 MeshFilter:
@@ -19557,160 +19095,6 @@ Transform:
   m_Father: {fileID: 1104861541}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1791124552
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -26.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (10)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
---- !u!1001 &1832195540
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -26.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -26.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &1856431465
 GameObject:
   m_ObjectHideFlags: 0
@@ -19745,6 +19129,61 @@ Transform:
   - {fileID: 92174010}
   m_Father: {fileID: 1175235115}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1915073220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1915073222}
+  - component: {fileID: 1915073221}
+  m_Layer: 0
+  m_Name: MonsterSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1915073221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915073220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49daae5e4d4871b45842e1daebfa8c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1220495710}
+  Enemies:
+  - EnemyPrefab: {fileID: 5863569837539572454, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
+    GoodEnemy: 1
+  - EnemyPrefab: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
+    GoodEnemy: 0
+  NextEnemy:
+    EnemyPrefab: {fileID: 0}
+    GoodEnemy: 0
+  GoodRerollChance: 10
+  SpawnTimer: 2
+--- !u!4 &1915073222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915073220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -48.790516, y: 10.277278, z: -16.539003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1924752436
 GameObject:
@@ -24731,18 +24170,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -24753,18 +24192,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 16.6
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -24823,11 +24262,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &1972177875
 MeshFilter:
@@ -24937,83 +24376,6 @@ Transform:
   m_Father: {fileID: 1104861541}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2034929971
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (7)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &2038329608
 GameObject:
   m_ObjectHideFlags: 0
@@ -25111,18 +24473,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockTransforms: 0
   renderWireFrame: 0
-  lightType: 2
-  lightMultiplier: 0.01
+  lightType: 0
+  lightMultiplier: 1
   spotExponent: 1
   constantAttenuation: 1
-  linearAttenuation: 123.6
-  quadraticAttenuation: 947.1
+  linearAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 22
-  colorTint: {r: 1, g: 0.495283, b: 0.8823351, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
-  useDithering: 1
-  ditherAmount: 141
+  useDithering: 0
+  ditherAmount: 0
   useSoftBlend: 0
   useCurves: 0
   worldScrollAmount: 0
@@ -25133,18 +24495,18 @@ MonoBehaviour:
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
   spotRange: 1
-  spotNear: 0.6
+  spotNear: 0.1
   spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
   spotShadow: {fileID: 0}
-  pointLightRadius: 14.45
+  pointLightRadius: 1
   pointEmission: {fileID: 0}
   pointNoise: {fileID: 0}
   pointShadow: {fileID: 0}
   areaVolume: {fileID: 0}
-  volumeShape: 1
+  volumeShape: 0
   shapeValue: 0
   volumeTextureOffset: {x: 0, y: 0, z: 0}
   volumeTextureScale: 0.5
@@ -25203,11 +24565,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boundsCentreOffset: {x: 0, y: 0, z: 0}
   _fallOffTexture: {fileID: 0}
-  spotMaterial: {fileID: 2100000, guid: 0ae03080a8dadc6448d3d12b54ed4f3c, type: 2}
-  pointMaterial: {fileID: 2100000, guid: dd36a29b2d153244ba3d06d8217c876c, type: 2}
-  areaMaterial: {fileID: 2100000, guid: 3d9186b180a5843f8810c59a305735cf, type: 2}
-  orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
-  renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
+  spotMaterial: {fileID: 0}
+  pointMaterial: {fileID: 0}
+  areaMaterial: {fileID: 0}
+  orthoMaterial: {fileID: 0}
+  renderDepthShader: {fileID: 0}
   meshContainer: {fileID: 0}
 --- !u!33 &2038329611
 MeshFilter:
@@ -25317,160 +24679,6 @@ Transform:
   m_Father: {fileID: 1104861541}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2062960422
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -26.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
---- !u!1001 &2101901237
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed (8)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!1 &2110841935
 GameObject:
   m_ObjectHideFlags: 0
@@ -31593,7 +30801,7 @@ Transform:
   - {fileID: 2583355533929928795}
   - {fileID: 9121771069395107788}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1222351147399056264
 MeshFilter:
@@ -60818,63 +60026,6 @@ Transform:
   m_Father: {fileID: 1217201780397101702}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &6746106792208381533
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5863569837539572454, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_Name
-      value: monstercrabgod-fixed
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.120935
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -25.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490888966564077660, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 66bcc36d0c8dbbf4ea71e6b5f04d5160, type: 3}
 --- !u!33 &6750353322145180699
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63348,83 +62499,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &7224796448659384440
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: Die
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: PlayerCtrl
-      value: 
-      objectReference: {fileID: 1220495717}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[1]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
-    - target: {fileID: 5804678381836494485, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: WeaponParts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -26.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7190308424171770113, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530805581988334523, guid: 385b477e7290c12479026febb64ca485, type: 3}
-      propertyPath: m_Name
-      value: monstercrabond-fixed
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 385b477e7290c12479026febb64ca485, type: 3}
 --- !u!33 &7226175441015821227
 MeshFilter:
   m_ObjectHideFlags: 0

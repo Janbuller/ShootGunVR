@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class DroppedWeapon : MonoBehaviour
+public class DroppedWeapon : MonoBehaviour, IShootable
 {
     [System.NonSerialized]
     public PlayerController PlayerCtrl;
@@ -19,7 +19,8 @@ public class DroppedWeapon : MonoBehaviour
         Type = (Weapons)WeaponType;
     }
 
-    public void OnHover(HoverEnterEventArgs args) {
+    public void GetShot(int Damage)
+    {
         PlayerCtrl.PickupWeapon(Type);
     }
 }

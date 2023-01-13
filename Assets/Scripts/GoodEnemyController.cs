@@ -18,7 +18,7 @@ public class GoodEnemyController : MonoBehaviour, IShootable
 
     }
 
-    public void GetShot()
+    public void GetShot(int Damage)
     {
         Instantiate(BadVersion, gameObject.transform.position, gameObject.transform.rotation);
         Destroy(gameObject);
