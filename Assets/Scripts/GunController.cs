@@ -17,7 +17,12 @@ public class GunController : MonoBehaviour
     public GameObject[] Guns = new GameObject[3];
 
     public int[] FullAmmo = new int[3];
-    public int[] Ammo = new int[3];
+    private int[] Ammo = new int[3];
+
+    public double[] ShootTime = new double[3];
+    public double[] ReloadTime = new double[3];
+
+    public double ShootTimer;
 
     private AudioController GunAudio;
 
@@ -32,8 +37,11 @@ public class GunController : MonoBehaviour
 
     public void Reload(ActivateEventArgs args)
     {
-        Ammo[(int)CurrentWeapon] = FullAmmo[(int)CurrentWeapon];
-        GunAudio.Play((int)CurrentWeapon + "-reload");
+        int CurWeaponIdx = (int)CurrentWeapon;
+        Ammo[CurWeaponIdx] = FullAmmo[(int)CurrentWeapon];
+        GunAudio.Play(CurWeaponIdx + "-reload");
+
+        ShootTimer = ReloadTime[CurWeaponIdx];
     }
 
     public void Fire(InputAction.CallbackContext context)
@@ -47,9 +55,12 @@ public class GunController : MonoBehaviour
             Guns[0].GetComponentsInChildren<Animator>()[0].SetTrigger("Fire");
         }
 
-        MuzzleFlash.Play();
+        if(ShootTimer > 0)
+            return;
 
+        MuzzleFlash.Play();
         GunAudio.Play((int)CurrentWeapon + "-fire");
+        ShootTimer = ShootTime[(int)CurrentWeapon];
 
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
@@ -59,7 +70,9 @@ public class GunController : MonoBehaviour
             IShootable ShootableComponent;
             if (Obj.TryGetComponent<IShootable>(out ShootableComponent))
             {
-                ShootableComponent.GetShot();
+                // If CurrentWeapon is a handgun, deal 1 damage. Else deal 2.
+                int Damage = CurrentWeapon == Weapons.Handgun ? 1 : 2;
+                ShootableComponent.GetShot(Damage);
             }
         }
 
@@ -68,6 +81,8 @@ public class GunController : MonoBehaviour
 
     void Update()
     {
+        ShootTimer -= Time.deltaTime;
+
         foreach (GameObject go in Guns)
         {
             if (go.activeSelf && go != Guns[(int)CurrentWeapon])

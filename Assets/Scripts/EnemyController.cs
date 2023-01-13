@@ -17,7 +17,11 @@ public class EnemyController : MonoBehaviour, IShootable
     [SerializeField]
     private GameObject[] WeaponParts = new GameObject[3];
 
+    public float Speed = 2.5f;
+
     public bool Die = false;
+
+    private int Health = 2;
 
     public void Update() {
 
@@ -25,9 +29,15 @@ public class EnemyController : MonoBehaviour, IShootable
             Die = false;
             GetShot();
         }
+
+        var Direction = PlayerCtrl.transform.position - transform.position;
+        Direction = Direction.normalized;
+
+        transform.position += new Vector3(Direction.x, 0, Direction.z) * Speed * Time.deltaTime;
+        transform.LookAt(new Vector3(PlayerCtrl.transform.position.x, transform.position.y, PlayerCtrl.transform.position.z));
     }
 
-    public void GetShot()
+    public void GetShot(int Damage)
     {
         var rand = new System.Random();
 
@@ -35,7 +45,10 @@ public class EnemyController : MonoBehaviour, IShootable
             DropWeapon();
         }
 
-        Destroy(gameObject);
+        Health -= Damage;
+
+        if(Health <= 0)
+            Destroy(gameObject);
     }
 
     public void DropWeapon() {
