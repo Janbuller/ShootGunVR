@@ -22,5 +22,6 @@ public class DroppedWeapon : MonoBehaviour, IShootable
     public void GetShot(int Damage)
     {
         PlayerCtrl.PickupWeapon(Type);
+        Destroy(gameObject);
     }
 }

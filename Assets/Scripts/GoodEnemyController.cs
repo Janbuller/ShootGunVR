@@ -7,6 +7,8 @@ public class GoodEnemyController : MonoBehaviour, IShootable
     [SerializeField]
     private GameObject BadVersion;
 
+    public PlayerController PlayerCtrl;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,8 @@ public class GoodEnemyController : MonoBehaviour, IShootable
 
     public void GetShot(int Damage)
     {
-        Instantiate(BadVersion, gameObject.transform.position, gameObject.transform.rotation);
+        var Spawned = Instantiate(BadVersion, gameObject.transform.position, gameObject.transform.rotation);
+            Spawned.GetComponent<EnemyController>().PlayerCtrl = PlayerCtrl;
         Destroy(gameObject);
     }
 }

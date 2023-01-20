@@ -71,5 +71,7 @@ public class MonsterSpawner : MonoBehaviour
         GameObject Spawned = Instantiate(NextEnemy.EnemyPrefab, Pos, Quaternion.identity);
         if(!NextEnemy.GoodEnemy)
             Spawned.GetComponent<EnemyController>().PlayerCtrl = PlayerCtrl;
+        else
+            Spawned.GetComponent<GoodEnemyController>().PlayerCtrl = PlayerCtrl;
     }
 }

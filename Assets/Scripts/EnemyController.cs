@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour, IShootable
             GetShot(2);
         }
 
-        var PlayerPos = PlayerCtrl.gameObject.GetComponent<CharacterController>().center;
+        var PlayerPos = PlayerCtrl.transform.position + PlayerCtrl.gameObject.GetComponent<CharacterController>().center;
         var Direction = PlayerPos - transform.position;
         Direction = Direction.normalized;
 

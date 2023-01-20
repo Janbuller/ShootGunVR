@@ -757,11 +757,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCtrl: {fileID: 0}
-  WeaponDropChance: 0.1
+  WeaponDropChance: 1
   WeaponParts:
   - {fileID: 2355279967092330698, guid: 4bcad20ca624956cd8339ed5c0f78f96, type: 3}
   - {fileID: 2355279967092330698, guid: a0d50ec3673e17fae9475c753891d7bd, type: 3}
   - {fileID: 2355279967092330698, guid: 887915037cbe51500b6e2903e8239eb6, type: 3}
+  Speed: 2.5
   Die: 0
 --- !u!65 &919132147647325125
 BoxCollider:
