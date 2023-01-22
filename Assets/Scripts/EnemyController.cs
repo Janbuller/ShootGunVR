@@ -6,7 +6,6 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour, IShootable
 {
 
-    [SerializeField]
     public PlayerController PlayerCtrl;
 
     [Header("The chance for a weapon to drop")]
@@ -52,9 +51,10 @@ public class EnemyController : MonoBehaviour, IShootable
             Destroy(gameObject);
     }
 
-    public void DropWeapon() {
+    private void DropWeapon() {
         var NextDrop = PlayerCtrl.GetNextDrop();
 
-        Instantiate(WeaponParts[(int)NextDrop], transform.position, transform.rotation).GetComponent<DroppedWeapon>().PlayerCtrl = PlayerCtrl;
+        Instantiate(WeaponParts[(int)NextDrop], transform.position, transform.rotation)
+            .GetComponent<DroppedWeapon>().PlayerCtrl = PlayerCtrl;
     }
 }

@@ -11,18 +11,6 @@ public class PlayerController : MonoBehaviour
         {Weapons.Shotgun, 0},
     };
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public Weapons GetNextDrop() {
         var rand = new System.Random();
         var WeaponCount = Weapons.GetNames(typeof(Weapons)).Length;

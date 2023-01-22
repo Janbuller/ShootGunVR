@@ -16,37 +16,42 @@ public class MonsterSpawner : MonoBehaviour
     private PlayerController PlayerCtrl;
 
     public EnemyInfo[] Enemies;
-    public EnemyInfo NextEnemy;
+    private EnemyInfo NextEnemy;
     [Header("The chance for a reroll of next enemy if it's a good enemy.\nChance = 1/x")]
     public int GoodRerollChance = 10;
 
-    public double SpawnTimer = 2;
+    public double TimeBetweenEnemies = 2;
+    private double SpawnTimer;
 
     // Start is called before the first frame update
     void Start()
     {
         PlayerCtrl = Player.GetComponent<PlayerController>();
+        SpawnTimer = TimeBetweenEnemies;
     }
 
     // Update is called once per frame
     void Update()
     {
-        SpawnTimer -= Time.deltaTime;
-
         if (SpawnTimer <= 0)
         {
             GetNextEnemy();
             SpawnEnemy();
-            SpawnTimer = 2;
+            SpawnTimer = TimeBetweenEnemies;
         }
+
+        SpawnTimer -= Time.deltaTime;
     }
 
     void GetNextEnemy()
     {
+        bool reroll = true;
+
         System.Random rand = new System.Random();
 
-        int index = 0;
-        bool reroll = true;
+        int index = rand.Next(0, Enemies.Length);
+        if(!Enemies[index].GoodEnemy)
+            reroll = false;
 
         while (reroll)
         {
@@ -56,6 +61,7 @@ public class MonsterSpawner : MonoBehaviour
 
         NextEnemy = Enemies[index];
     }
+
     void SpawnEnemy()
     {
         System.Random rand = new System.Random();

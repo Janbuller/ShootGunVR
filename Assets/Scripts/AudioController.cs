@@ -7,7 +7,7 @@ public class AudioController : MonoBehaviour
 {
     public Sound[] Sounds;
 
-    void Awake() {
+    public void Awake() {
 		foreach (Sound sound in Sounds)
 		{
 			sound.source = gameObject.AddComponent<AudioSource>();

@@ -22,7 +22,7 @@ public class GunController : MonoBehaviour
     public double[] ShootTime = new double[3];
     public double[] ReloadTime = new double[3];
 
-    public double ShootTimer;
+    private double ShootTimer;
 
     private AudioController GunAudio;
 
@@ -51,19 +51,18 @@ public class GunController : MonoBehaviour
         if (Ammo[(int)CurrentWeapon] <= 0)
             return;
 
+        if(ShootTimer > 0)
+            return;
+
         if(CurrentWeapon == Weapons.Handgun) {
             Guns[0].GetComponentsInChildren<Animator>()[0].SetTrigger("Fire");
         }
-
-        if(ShootTimer > 0)
-            return;
 
         MuzzleFlash.Play();
         GunAudio.Play((int)CurrentWeapon + "-fire");
         ShootTimer = ShootTime[(int)CurrentWeapon];
 
         RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(MuzzleTrans.position, MuzzleTrans.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
         {
             var Obj = hit.transform.gameObject;

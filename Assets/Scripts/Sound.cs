@@ -14,10 +14,10 @@ public class Sound
 	[Range(0f, 1f)]
 	public float Volume = 1.0f;
 
-	public AudioSource source;
+	public AudioSource Source;
 
 	public void Play() {
-		source.volume = Volume;
-		source.Play();
+		Source.volume = Volume;
+		Source.Play();
 	}
 }
